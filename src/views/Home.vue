@@ -61,7 +61,7 @@ const click = () => {
 }
 
 onMounted(() => {
-  alert('页面加载完成')
+  alert('页面加载完成，这是onMounted生命周期函数')
 })
 
 const show = (item) => {
