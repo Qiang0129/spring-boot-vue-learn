@@ -1,0 +1,12 @@
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": ("base": #40ff79),
+    "success": ("base": #67C23A),
+    "warning": ("base": #e63c91),
+    "danger":  ("base": #F56C6C),
+    "info":    ("base": #873abb)
+  )
+);
+
+// // 引入全部组件样式（必须，否则不会生成样式）
+// @use "element-plus/theme-chalk/src/index.scss" as *;
