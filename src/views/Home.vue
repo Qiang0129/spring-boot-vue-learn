@@ -30,12 +30,21 @@
     <div style="margin-bottom: 20px;">
       <button @click="click">点击事件</button>
     </div>
-<!-- 时间绑定 -->
+<!-- 事件绑定 -->
     <div :style="objection.yangshi" ></div>
     <div>
       <img :src="objection.img" alt="">
     </div>
     
+<!-- 测试element-plus是否导入成功 -->
+    <div>
+      <el-button @click="onClick " :style="{color: 'red'}">element-plus默认按钮</el-button>  <!-- //:style=绑定了一个对象，他是描述文本颜色的 -->
+      <el-button type="primary" :style="{color: 'red'}">Primary</el-button>
+      <el-button type="success">Success</el-button>
+      <el-button type="info">Info</el-button>
+      <el-button type="warning">Warning</el-button>
+      <el-button type="danger">Danger</el-button>
+    </div>
 
   </main>
 </template>
@@ -66,5 +75,8 @@ onMounted(() => {
 
 const show = (item) => {
   alert(item)
+}
+const onClick = () => {
+  alert('你点击了element-plus默认样式的按钮')
 }
 </script>
