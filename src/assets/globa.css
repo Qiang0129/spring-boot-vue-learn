@@ -5,3 +5,9 @@ body {
   color: aliceblue;
 
 }
+
+div{
+  color :black;
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+}
